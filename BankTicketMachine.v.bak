@@ -1,0 +1,116 @@
+module bank_ticket_machine (
+    input clk,
+    input reset,
+    input [3:0] officer_button,
+    output [6:0] seg_ticket,
+    output [6:0] seg_officer
+);
+
+    wire [6:0] ticket_number;
+    wire [1:0] officer_number;
+    wire [3:0] waiting_customers;
+
+    // Instantiate FSM module
+    fsm fsm_inst (
+        .clk(clk),
+        .reset(reset),
+        .officer_button(officer_button),
+        .ticket_number(ticket_number),
+        .officer_number(officer_number),
+        .waiting_customers(waiting_customers)
+    );
+
+    // Instantiate 7-segment display module
+    seven_segment_display display_inst (
+        .ticket_number(ticket_number),
+        .officer_number(officer_number),
+        .seg_ticket(seg_ticket),
+        .seg_officer(seg_officer)
+    );
+
+endmodule
+
+module fsm (
+    input clk,
+    input reset,
+    input [3:0] officer_button,
+    output reg [6:0] ticket_number,
+    output reg [1:0] officer_number,
+    output reg [3:0] waiting_customers
+);
+
+    typedef enum reg [1:0] {
+        IDLE = 2'b00,
+        DISPENSE_TICKET = 2'b01,
+        UPDATE_DISPLAY = 2'b10
+    } state_t;
+    
+    state_t current_state, next_state;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            current_state <= IDLE;
+        else
+            current_state <= next_state;
+    end
+
+    always @(*) begin
+        next_state = current_state;
+        case (current_state)
+            IDLE: begin
+                if (officer_button != 4'b0000) begin
+                    next_state = DISPENSE_TICKET;
+                end
+            end
+            DISPENSE_TICKET: begin
+                next_state = UPDATE_DISPLAY;
+            end
+            UPDATE_DISPLAY: begin
+                next_state = IDLE;
+            end
+        endcase
+    end
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            ticket_number <= 7'b0000000;
+            waiting_customers <= 4'b0000;
+        end
+        else if (current_state == DISPENSE_TICKET) begin
+            ticket_number <= ticket_number + 1;
+            waiting_customers <= waiting_customers + 1;
+            officer_number <= (officer_button[0]) ? 2'b00 :
+                              (officer_button[1]) ? 2'b01 :
+                              (officer_button[2]) ? 2'b10 :
+                              (officer_button[3]) ? 2'b11 : officer_number;
+        end
+    end
+
+endmodule
+
+module seven_segment_display (
+    input [6:0] ticket_number,
+    input [1:0] officer_number,
+    output reg [6:0] seg_ticket,
+    output reg [6:0] seg_officer
+);
+
+    always @(*) begin
+        case (ticket_number)
+            7'b0000000: seg_ticket = 7'b1000000;
+            7'b0000001: seg_ticket = 7'b1111001;
+            default: seg_ticket = 7'b0000000;
+        endcase
+    end
+
+    always @(*) begin
+        case (officer_number)
+            2'b00: seg_officer = 7'b1000000;
+            2'b01: seg_officer = 7'b1111001;
+            2'b10: seg_officer = 7'b0100100;
+            2'b11: seg_officer = 7'b0110000;
+            default: seg_officer = 7'b0000000;
+        endcase
+    end
+
+endmodule

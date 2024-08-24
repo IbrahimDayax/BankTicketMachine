@@ -1,0 +1,17 @@
+/home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v {1 {vlog -work work -stats=none /home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BankTicketMachine
+-- Compiling module fsm
+-- Compiling module seven_segment_display
+
+Top level modules:
+	BankTicketMachine
+
+} {} {}} /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v {1 {vlog -work work -stats=none /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_bank_ticket_machine
+
+Top level modules:
+	tb_bank_ticket_machine
+
+} {} {}}

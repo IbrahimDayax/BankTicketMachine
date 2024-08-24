@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "seg_ticket[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_ticket[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_officer[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_service[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg_waiting[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "officer_button[0]",
+					"strict" : false
+				},
+				{
+					"name" : "officer_button[1]",
+					"strict" : false
+				},
+				{
+					"name" : "officer_button[2]",
+					"strict" : false
+				},
+				{
+					"name" : "officer_button[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

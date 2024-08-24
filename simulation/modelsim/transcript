@@ -1,0 +1,556 @@
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# vsim tb_bank_ticket_machine 
+# Start time: 01:11:13 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 0000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0000001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111001
+# Officer 2 pressed: seg_ticket = 0000010, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0100100
+# Officer 3 pressed: seg_ticket = 0000011, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0110000
+# Officer 4 pressed: seg_ticket = 0000100, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0011001
+# Rapid button presses: seg_ticket = 0000110, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0000010
+# Multiple officers pressed: seg_ticket = 0000111, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(92)
+#    Time: 870 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 92
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 01:19:36 on Aug 03,2024, Elapsed time: 0:08:23
+# Errors: 0, Warnings: 7
+# vsim tb_bank_ticket_machine 
+# Start time: 01:19:36 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 1111001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111001
+# Officer 2 pressed: seg_ticket = 0100100, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0100100
+# Officer 3 pressed: seg_ticket = 0110000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0110000
+# Officer 4 pressed: seg_ticket = 0011001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0011001
+# Rapid button presses: seg_ticket = 0000010, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0000010
+# Multiple officers pressed: seg_ticket = 1111000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(92)
+#    Time: 870 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 92
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 01:31:17 on Aug 03,2024, Elapsed time: 0:11:41
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 01:31:17 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 1111001, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1111001
+# Officer 2 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 3 pressed: seg_ticket = 0110000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0110000
+# Officer 4 pressed: seg_ticket = 0011001, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0011001
+# Rapid button presses: seg_ticket = 0000010, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000010
+# Multiple officers pressed: seg_ticket = 1111000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1111000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(92)
+#    Time: 870 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 92
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim tb_bank_ticket_machine
+# End time: 01:46:19 on Aug 03,2024, Elapsed time: 0:15:02
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 01:46:19 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 1111001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111001
+# Officer 2 pressed: seg_ticket = 0100100, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0100100
+# Officer 3 pressed: seg_ticket = 0110000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0110000
+# Officer 4 pressed: seg_ticket = 0011001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0011001
+# Rapid button presses: seg_ticket = 0000010, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0000010
+# Multiple officers pressed: seg_ticket = 1111000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(93)
+#    Time: 870 ns  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 93
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 02:00:25 on Aug 03,2024, Elapsed time: 0:14:06
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 02:00:25 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 1111001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111001
+# Officer 2 pressed: seg_ticket = 0100100, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0100100
+# Officer 3 pressed: seg_ticket = 0110000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0110000
+# Officer 4 pressed: seg_ticket = 0011001, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0011001
+# Rapid button presses: seg_ticket = 0000010, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 0000010
+# Multiple officers pressed: seg_ticket = 1111000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1111000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(93)
+#    Time: 870 ns  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 93
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 13:14:27 on Aug 03,2024, Elapsed time: 11:14:02
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 13:14:27 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Officer 3 pressed: seg_ticket = 0000000, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000000
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 13:23:36 on Aug 03,2024, Elapsed time: 0:09:09
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 13:23:36 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 16:29:35 on Aug 03,2024, Elapsed time: 3:05:59
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 16:29:35 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 16:59:12 on Aug 03,2024, Elapsed time: 0:29:37
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 16:59:12 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 0000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0000010, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# Officer 2 pressed: seg_ticket = 1000100, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Officer 3 pressed: seg_ticket = 0100110, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000000
+# Officer 4 pressed: seg_ticket = 0011000, seg_officer = 0110000, seg_service = 0110000, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 1001010, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0001100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 17:33:15 on Aug 03,2024, Elapsed time: 0:34:03
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 17:33:15 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+
+run 1000ns
+# No button pressed: seg_ticket = 0000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0000010, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# Officer 2 pressed: seg_ticket = 1000100, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Officer 3 pressed: seg_ticket = 0100110, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000000
+# Officer 4 pressed: seg_ticket = 0011000, seg_officer = 0110000, seg_service = 0110000, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 1001010, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0001100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 17:39:37 on Aug 03,2024, Elapsed time: 0:06:22
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 17:39:37 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 0000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0000010, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# Officer 2 pressed: seg_ticket = 1000100, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Officer 3 pressed: seg_ticket = 0100110, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000000
+# Officer 4 pressed: seg_ticket = 0011000, seg_officer = 0110000, seg_service = 0110000, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 1001010, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0001100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 17:47:46 on Aug 03,2024, Elapsed time: 0:08:09
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 17:47:46 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = xxxxxxx, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(90)
+#    Time: 720 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 90
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 19:21:17 on Aug 03,2024, Elapsed time: 1:33:31
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 19:21:17 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(96)
+#    Time: 710 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 96
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 19:27:34 on Aug 03,2024, Elapsed time: 0:06:17
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 19:27:34 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# Rapid button presses: seg_ticket = 0000000, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0000000
+# Multiple officers pressed: seg_ticket = 0000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(96)
+#    Time: 710 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 96
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 19:35:35 on Aug 03,2024, Elapsed time: 0:08:01
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 19:35:35 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# ** Note: $stop    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(74)
+#    Time: 520 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 74
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 20:04:39 on Aug 03,2024, Elapsed time: 0:29:04
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 20:04:39 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# ** Note: $finish    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(74)
+#    Time: 520 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# 1
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 74
+# Compile of BankTicketMachine.v was successful.
+# Compile of tb_bank_ticket_machine.v was successful.
+# 2 compiles, 0 failed with no errors.
+
+vsim tb_bank_ticket_machine
+# End time: 20:10:14 on Aug 03,2024, Elapsed time: 0:05:35
+# Errors: 0, Warnings: 2
+# vsim tb_bank_ticket_machine 
+# Start time: 20:10:14 on Aug 03,2024
+# Loading work.tb_bank_ticket_machine
+# Loading work.BankTicketMachine
+# Loading work.fsm
+# Loading work.seven_segment_display
+add wave -position insertpoint  \
+sim:/tb_bank_ticket_machine/clk \
+sim:/tb_bank_ticket_machine/reset \
+sim:/tb_bank_ticket_machine/officer_button \
+sim:/tb_bank_ticket_machine/seg_ticket \
+sim:/tb_bank_ticket_machine/seg_officer \
+sim:/tb_bank_ticket_machine/seg_service \
+sim:/tb_bank_ticket_machine/seg_waiting
+run 1000ns
+# No button pressed: seg_ticket = 1000000, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 1000000
+# Officer 1 pressed: seg_ticket = 0100100, seg_officer = 1000000, seg_service = 1110111, seg_waiting = 0100100
+# Officer 2 pressed: seg_ticket = 0011001, seg_officer = 1111001, seg_service = 0011100, seg_waiting = 0011001
+# Officer 3 pressed: seg_ticket = 0000010, seg_officer = 0100100, seg_service = 0000110, seg_waiting = 0000010
+# Officer 4 pressed: seg_ticket = 0000000, seg_officer = 0110000, seg_service = 0100001, seg_waiting = 0000000
+# ** Note: $stop    : /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v(74)
+#    Time: 520 ps  Iteration: 0  Instance: /tb_bank_ticket_machine
+# Break in Module tb_bank_ticket_machine at /home/ibrahim/Documents/BankTicketMachine/tb_bank_ticket_machine.v line 74
+# End time: 20:31:04 on Aug 03,2024, Elapsed time: 0:20:50
+# Errors: 0, Warnings: 2

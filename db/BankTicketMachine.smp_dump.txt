@@ -1,0 +1,6 @@
+
+State Machine - |BankTicketMachine|fsm:fsm_inst|current_state
+Name current_state.IDLE current_state.UPDATE_DISPLAY current_state.DISPENSE_TICKET 
+current_state.IDLE 0 0 0 
+current_state.DISPENSE_TICKET 1 0 1 
+current_state.UPDATE_DISPLAY 1 1 0 

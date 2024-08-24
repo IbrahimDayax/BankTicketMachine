@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ibrahim/Documents/BankTicketMachine/simulation/modelsim
+vBankTicketMachine
+Z1 !s110 1723103560
+!i10b 1
+!s100 NDBl9?Mjg0Z[i_en31HTI0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^[FTEUji=_m:bNZo@_Q3I2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1723102054
+Z5 8/home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v
+Z6 F/home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v
+!i122 0
+L0 2 39
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1723103559.000000
+!s107 /home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/ibrahim/Documents/BankTicketMachine|/home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+/home/ibrahim/Documents/BankTicketMachine
+Z12 tCvgOpt 0
+n@bank@ticket@machine
+vfsm
+R1
+!i10b 1
+!s100 ab0QJ2YHkH6HOljZ]Zf_a2
+R2
+IW?KIbSUUC<H]c8JhYVaF>0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 44 76
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 /home/ibrahim/Documents/BankTicketMachine/BankTicketMachine.v|
+R9
+!i113 1
+R10
+R11
+R12
+vseven_segment_display
+R1
+!i10b 1
+!s100 V1feN@]NPn]lKOn<[g<8z2
+R2
+I5[2>mWWg]ao93[:V_MIHl3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 123 64
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 1
+R10
+R11
+R12

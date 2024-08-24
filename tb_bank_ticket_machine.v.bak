@@ -1,0 +1,43 @@
+module tb_bank_ticket_machine();
+
+    reg clk;
+    reg reset;
+    reg [3:0] officer_button;
+    wire [6:0] seg_ticket;
+    wire [6:0] seg_officer;
+
+    bank_ticket_machine uut (
+        .clk(clk),
+        .reset(reset),
+        .officer_button(officer_button),
+        .seg_ticket(seg_ticket),
+        .seg_officer(seg_officer)
+    );
+
+    initial begin
+        // Initialize signals
+        clk = 0;
+        reset = 1;
+        officer_button = 4'b0000;
+
+        // Apply reset
+        #10 reset = 0;
+        #10 reset = 1;
+        #10 reset = 0;
+
+        // Simulate button press by officer 1
+        #20 officer_button = 4'b0001;
+        #20 officer_button = 4'b0000;
+
+        // Simulate button press by officer 2
+        #20 officer_button = 4'b0010;
+        #20 officer_button = 4'b0000;
+
+        // Continue simulation as needed
+        #100 $stop;
+    end
+
+    // Clock generation
+    always #5 clk = ~clk;
+
+endmodule
