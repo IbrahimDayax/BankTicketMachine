@@ -38,6 +38,15 @@ The simulation outputs the state of the 7-segment displays after each action.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/BankTicketMachine.git
+   git clone https://github.com/ibrahimdayax/BankTicketMachine.git
    cd BankTicketMachine
 
+2. Open the project in your Verilog simulation environment.
+
+3. Compile the Verilog files:
+   `BankTicketMachine.v`
+   `tb_bank_ticket_machine.v`
+
+4. Run the Modelsim RTL simulation using the testbench file tb_bank_ticket_machine.v.
+
+5. Observe the simulation results and verify the outputs on the 7-segment displays.  
