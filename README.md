@@ -1,52 +1,87 @@
-# Bank Ticket Machine
+# BankTicketMachine
 
 ## Overview
+This project implements a digital ticketing system for a bank using Verilog HDL. The system is designed to manage and display ticket numbers, officer numbers, service types, and the number of waiting customers on seven-segment displays. The project was developed using Intel Quartus Prime for synthesis and ModelSim for simulation and verification.
 
-This project implements a Bank Ticket Machine using Verilog. The system is designed to manage a ticketing process in a bank environment where multiple officers serve customers. The project simulates a Finite State Machine (FSM) that dispenses tickets, updates display units for both the ticket number and officer information, and tracks the number of waiting customers.
+## Table of Contents
+- [Project Description](#project-description)
+- [Design Modules](#design-modules)
+- [Testbench](#testbench)
+- [Simulation and Verification](#simulation-and-verification)
+- [Tools Used](#tools-used)
+- [Setup and Usage](#setup-and-usage)
+- [Conclusion](#conclusion)
 
-## Project Structure
+## Project Description
+The Bank Ticket Machine project is a digital system that assigns tickets to customers and tracks service progress within a bank environment. It includes four primary components:
+- **Ticket Number Display:** Displays the current ticket number.
+- **Officer Number Display:** Shows the officer currently attending the customer.
+- **Service Type Display:** Indicates the type of service the customer is receiving.
+- **Waiting Customers Display:** Shows the number of customers waiting in the queue.
 
-The project is organized into the following modules:
+## Design Modules
 
-- **BankTicketMachine**: The top-level module that integrates the FSM and 7-segment display modules.
-- **fsm**: The Finite State Machine responsible for ticket dispensing and state management.
-- **seven_segment_display**: This module handles the 7-segment display encoding for ticket numbers, officer numbers, service types, and the number of waiting customers.
+### 1. `BankTicketMachine` (Top-Level Module)
+This is the top-level module that integrates the entire system, including the FSM (Finite State Machine) and the seven-segment display modules. It handles the input signals from the officer buttons and controls the output to the seven-segment displays.
 
-## Features
+### 2. `fsm` (Finite State Machine Module)
+The FSM controls the states of the system: IDLE, DISPENSE_TICKET, and UPDATE_DISPLAY. Based on the button pressed by an officer, the FSM transitions between states to update the ticket number, officer number, service type, and waiting customers count.
 
-- **FSM Implementation**: The FSM has three states: `IDLE`, `DISPENSE_TICKET`, and `UPDATE_DISPLAY`. It manages the ticket dispensing process based on the officer's input.
-- **7-Segment Display Encoding**: Four 7-segment displays show the ticket number, officer number, service type, and waiting customers. 
-- **Verilog Testbench**: A comprehensive testbench is provided to simulate and verify the functionality of the system.
+### 3. `seven_segment_display`
+This module handles the conversion of binary values (ticket numbers, officer numbers, service types, and waiting customers) into the corresponding seven-segment display signals.
 
-## Simulation
+## Testbench
+The testbench, `tb_bank_ticket_machine`, was developed to simulate and verify the functionality of the Bank Ticket Machine. It initializes the inputs, simulates button presses by officers, and checks the corresponding outputs on the seven-segment displays. The testbench verifies that the system correctly transitions through its states and updates the displays accordingly.
 
-The project includes a testbench (`tb_bank_ticket_machine`) that simulates the behavior of the Bank Ticket Machine. It tests different scenarios such as:
+### Test Scenarios:
+- **No Button Pressed:** The system remains in the IDLE state, with no changes to the display values.
+- **Single Officer Button Pressed:** The FSM moves to DISPENSE_TICKET, increments the ticket number, updates the officer number, service type, and waiting customers.
+- **Multiple Officer Buttons Pressed Sequentially:** The system is tested to ensure it correctly handles sequential button presses from different officers.
 
-- No button pressed
-- Pressing each officer's button one at a time
+## Simulation and Verification
+Simulation and verification were carried out using ModelSim. The steps involved were:
 
-The simulation outputs the state of the 7-segment displays after each action.
+1. **Compilation:** 
+   - The Verilog modules were compiled using ModelSim. The compilation log showed no errors and two warnings, which were investigated and confirmed to be non-critical.
+   
+2. **Simulation:**
+   - The `tb_bank_ticket_machine` testbench was used to simulate the design. The simulation was run for 1000ns to observe the behavior of the system in response to various inputs.
 
-## Usage
+3. **Waveform Analysis:**
+   - Waveforms were generated in ModelSim to visually inspect the outputs (ticket number, officer number, service type, and waiting customers) in response to the simulated inputs. The waveforms confirmed that the FSM transitioned correctly through its states, and the outputs were as expected.
 
-### Prerequisites
+## Tools Used
 
-- A Verilog simulator like ModelSim or any compatible tool.
-- A basic understanding of Verilog and FSM design.
+### 1. **Intel Quartus Prime:**
+   - Quartus Prime was used for synthesis and analysis of the Verilog HDL code. The project was synthesized to ensure that the design met the necessary hardware constraints and to generate a netlist for simulation.
 
-### Running the Simulation
+### 2. **ModelSim:**
+   - ModelSim was used for simulation and verification of the Verilog code. It provided a detailed analysis of the signals within the design, allowing for debugging and validation of the logic.
 
-1. Clone this repository:
+## Setup and Usage
+
+### Prerequisites:
+- **Intel Quartus Prime**
+- **ModelSim**
+- **Git** (optional, for version control)
+
+### Steps to Run the Project:
+
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/ibrahimdayax/BankTicketMachine.git
+   git clone https://github.com/IbrahimDayax/BankTicketMachine.git
    cd BankTicketMachine
+2. Open the Project in Quartus Prime:
+   - Launch Quartus Prime.
+   - Open the BankTicketMachine project file.
+   - Compile the Design
 
-2. Open the project in your Verilog simulation environment.
+3. Simulate in ModelSim:
+   - Launch ModelSim.
+   - Compile the design files.
+   - Run the simulation using the testbench tb_bank_ticket_machine.
+     
+4. Analyze the waveforms to verify the correct operation.
 
-3. Compile the Verilog files:
-   `BankTicketMachine.v`
-   `tb_bank_ticket_machine.v`
-
-4. Run the Modelsim RTL simulation using the testbench file tb_bank_ticket_machine.v.
-
-5. Observe the simulation results and verify the outputs on the 7-segment displays.  
+## Conclusion
+The Bank Ticket Machine project successfully demonstrates the use of Verilog HDL for implementing a digital ticketing system. Through the integration of a finite state machine and seven-segment displays, the system efficiently manages ticket dispensing and customer service tracking. The design was verified through simulation using ModelSim, ensuring that the system operates as intended under various test scenarios.
