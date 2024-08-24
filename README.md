@@ -42,7 +42,7 @@ The testbench, `tb_bank_ticket_machine`, was developed to simulate and verify th
 Simulation and verification were carried out using ModelSim. The steps involved were:
 
 1. **Compilation:** 
-   - The Verilog modules were compiled using ModelSim. The compilation log showed no errors and two warnings, which were investigated and confirmed to be non-critical.
+   - The Verilog modules were compiled using Quartus Prime. The compilation log showed no errors and two warnings, which were investigated and confirmed to be non-critical.
    
 2. **Simulation:**
    - The `tb_bank_ticket_machine` testbench was used to simulate the design. The simulation was run for 1000ns to observe the behavior of the system in response to various inputs.
